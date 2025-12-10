@@ -1,0 +1,33 @@
+export const lontaraData = [
+    // Basic Characters
+    { id: 'ka', latin: 'Ka', char: 'KA', type: 'basic', symbol: 'ᨀ', fontChar: 'k' },
+    { id: 'ga', latin: 'Ga', char: 'GA', type: 'basic', symbol: 'ᨁ', fontChar: 'g' },
+    { id: 'nga', latin: 'Nga', char: 'NGA', type: 'basic', symbol: 'ᨂ', fontChar: 'G' },
+    { id: 'nka', latin: "Nka'", char: "NKA'", type: 'basic', symbol: 'ᨃ', fontChar: 'K' },
+    { id: 'pa', latin: 'Pa', char: 'PA', type: 'basic', symbol: 'ᨄ', fontChar: 'p' },
+    { id: 'ba', latin: 'Ba', char: 'BA', type: 'basic', symbol: 'ᨅ', fontChar: 'b' },
+    { id: 'ma', latin: 'Ma', char: 'MA', type: 'basic', symbol: 'ᨆ', fontChar: 'm' },
+    { id: 'mpa', latin: "Mpa'", char: "MPA'", type: 'basic', symbol: 'ᨇ', fontChar: 'P' },
+    { id: 'ta', latin: 'Ta', char: 'TA', type: 'basic', symbol: 'ᨈ', fontChar: 't' },
+    { id: 'da', latin: 'Da', char: 'DA', type: 'basic', symbol: 'ᨉ', fontChar: 'd' },
+    { id: 'na', latin: 'Na', char: 'NA', type: 'basic', symbol: 'ᨊ', fontChar: 'n' },
+    { id: 'nra', latin: "Nra'", char: "NRA'", type: 'basic', symbol: 'ᨋ', fontChar: 'N' },
+    { id: 'ca', latin: 'Ca', char: 'CA', type: 'basic', symbol: 'ᨌ', fontChar: 'c' },
+    { id: 'ja', latin: 'Ja', char: 'JA', type: 'basic', symbol: 'ᨍ', fontChar: 'j' },
+    { id: 'nya', latin: 'Nya', char: 'NYA', type: 'basic', symbol: 'ᨎ', fontChar: 'y' },
+    { id: 'nca', latin: "Nca'", char: "NCA'", type: 'basic', symbol: 'ᨏ', fontChar: 'C' },
+    { id: 'ya', latin: 'Ya', char: 'YA', type: 'basic', symbol: 'ᨐ', fontChar: 'Y' },
+    { id: 'ra', latin: 'Ra', char: 'RA', type: 'basic', symbol: 'ᨑ', fontChar: 'r' },
+    { id: 'la', latin: 'La', char: 'LA', type: 'basic', symbol: 'ᨒ', fontChar: 'l' },
+    { id: 'wa', latin: 'Wa', char: 'WA', type: 'basic', symbol: 'ᨓ', fontChar: 'w' },
+    { id: 'sa', latin: 'Sa', char: 'SA', type: 'basic', symbol: 'ᨔ', fontChar: 's' },
+    { id: 'a', latin: 'A', char: 'A', type: 'basic', symbol: 'ᨕ', fontChar: 'a' },
+    { id: 'ha', latin: 'Ha', char: 'HA', type: 'basic', symbol: 'ᨖ', fontChar: 'h' },
+
+    // Vowels (Tanda Baca)
+    { id: 'v_i', latin: '-i', char: 'i', type: 'vowel', symbol: 'i' },
+    { id: 'v_u', latin: '-u', char: 'u', type: 'vowel', symbol: 'u' },
+    { id: 'v_e', latin: '-e', char: 'e', type: 'vowel', symbol: 'e' },
+    { id: 'v_o', latin: '-o', char: 'o', type: 'vowel', symbol: 'o' },
+    { id: 'v_ee', latin: "-e'", char: "e'", type: 'vowel', symbol: "e'" },
+];
