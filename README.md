@@ -2,29 +2,29 @@
 
 **Panrita Lontara** adalah aplikasi web edukatif interaktif yang dirancang untuk melestarikan dan memperkenalkan **Aksara Lontara** (Bugis-Makassar) kepada generasi muda melalui teknologi modern yang menyenangkan.
 
-## 🚀 Fitur Utama
+##  Fitur Utama
 
 Aplikasi ini memiliki tiga fitur utama:
 
-### 1. 📚 Materi (Learning Mode)
+### 1.  Materi (Learning Mode)
 Belajar huruf Lontara dasar dan variasi vokalnya.
 - **Kartu Interaktif**: Klik setiap huruf untuk melihat detailnya.
 - **Variasi Vokal (Tanda Baca)**: Pelajari perubahan bunyi huruf dengan tanda baca (i, u, e, o, ae).
 - **Text-to-Speech (Audio)**: Dengarkan cara pengucapan setiap huruf dan variasi vokalnya (Menggunakan teknologi **Puter.js**).
 
-### 2. 🎲 Kuis 3D (Quiz Mode)
+### 2.  Kuis 3D (Quiz Mode)
 Uji pengetahuan Anda dengan cara yang seru!
 - **Model 3D Interaktif**: Putar balok huruf Lontara 3D untuk melihat bentuknya dari segala sisi.
 - **Tebak Huruf**: Jawab pertanyaan pilihan ganda berdasarkan huruf 3D yang ditampilkan.
 - **Sistem Skor & Streak**: Kumpulkan poin dan pertahankan kemenangan beruntun Anda.
 
-### 3. ✍️ Menggambar (Writing Mode)
+### 3.  Menggambar (Writing Mode)
 Berlatih menulis aksara Lontara secara digital.
 - **Kanvas Digital**: Tulis huruf menggunakan jari (layar sentuh) atau mouse.
 - **Cheatsheet**: Referensi huruf tersedia di sisi layar untuk memudahkan latihan.
 - **Simpan Karya**: Unduh hasil tulisan Anda sebagai gambar PNG.
 
-## 🛠️ Detail Teknis & Arsitektur
+##  Detail Teknis & Arsitektur
 
 ### 1. **Core Framework: React & Vite**
 Project ini dibangun dengan **React 18** menggunakan **Vite** sebagai build tool untuk performa pengembangan yang super cepat. Struktur komponen diatur secara modular untuk memudahkan pemeliharaan dan skalabilitas.
@@ -50,12 +50,12 @@ Desain antarmuka menggunakan **Tailwind CSS v4** (versi terbaru) untuk pendekata
 - **Persistent Player**: Audio latar (`Layout.jsx`) diatur agar tetap berjalan saat navigasi antar halaman (SPA).
 - **Volume Control**: Slider volume state-controlled untuk pengalaman pengguna yang nyaman.
 
-## 🎵 Fitur Tambahan
+##  Fitur Tambahan
 
 - **Lontara Font**: Menggunakan font khusus *Noto Sans Buginese* untuk tampilan aksara yang otentik.
 - **Backsound**: Musik latar yang menenangkan dengan kontrol **Volume** dan **Mute** di pojok kiri bawah.
 
-## 📦 Cara Menjalankan Project
+##  Cara Menjalankan Project
 
 1.  **Clone Repository**
     ```bash
@@ -75,6 +75,3 @@ Desain antarmuka menggunakan **Tailwind CSS v4** (versi terbaru) untuk pendekata
 
 4.  **Buka di Browser**
     Buka alamat lokal yang muncul di terminal (biasanya `http://localhost:5173`).
-
----
-*Dibuat dengan ❤️ untuk pelestarian budaya Sulawesi Selatan.*
