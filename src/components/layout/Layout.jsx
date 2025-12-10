@@ -11,12 +11,28 @@ const Layout = ({ children }) => {
 
   useEffect(() => {
     // Auto-play attempt with initial volume
-    if (audioRef.current) {
-      audioRef.current.volume = volume;
-      audioRef.current.play().catch(e => {
-        console.log("Audio autoplay prevented by browser, waiting for interaction");
-      });
-    }
+    const tryPlay = () => {
+      if (audioRef.current) {
+        audioRef.current.volume = volume;
+        audioRef.current.play().catch(e => {
+          console.log("Audio autoplay prevented by browser, waiting for interaction");
+          // If autoplay fails, listen for the first interaction to play
+          const playOnInteraction = () => {
+            audioRef.current.play();
+            // Remove listener after success
+            window.removeEventListener('click', playOnInteraction);
+            window.removeEventListener('touchstart', playOnInteraction);
+            window.removeEventListener('keydown', playOnInteraction);
+          };
+          
+          window.addEventListener('click', playOnInteraction);
+          window.addEventListener('touchstart', playOnInteraction);
+          window.addEventListener('keydown', playOnInteraction);
+        });
+      }
+    };
+    
+    tryPlay();
   }, []);
 
   const toggleMute = () => {
