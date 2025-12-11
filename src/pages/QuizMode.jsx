@@ -3,6 +3,8 @@ import Lontara3DViewer from '../components/features/quiz/Lontara3DViewer';
 import { lontaraData } from '../data/lontaraData';
 import { Shuffle, RefreshCw, CheckCircle, XCircle } from 'lucide-react';
 import confetti from 'canvas-confetti';
+import correctSound from '../assets/correct.mp3';
+import wrongSound from '../assets/wrong.mp3';
 
 const QuizMode = () => {
   const [currentQuestion, setCurrentQuestion] = useState(null);
@@ -43,6 +45,7 @@ const QuizMode = () => {
     setSelectedOption(option);
     
     if (option.id === currentQuestion.id) {
+      new Audio(correctSound).play().catch(e => console.error("Audio play failed", e));
       setIsCorrect(true);
       setScore(s => s + 10);
       setStreak(s => s + 1);
@@ -53,6 +56,7 @@ const QuizMode = () => {
         colors: ['#F59E0B', '#D97706', '#92400E'] // Amber shades
       });
     } else {
+      new Audio(wrongSound).play().catch(e => console.error("Audio play failed", e));
       setIsCorrect(false);
       setStreak(0);
     }

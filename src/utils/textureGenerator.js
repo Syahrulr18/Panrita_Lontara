@@ -2,7 +2,7 @@ export const createTextTexture = (text, options = {}) => {
     const {
         fontSize = 200,
         fontFamily = 'Noto Sans Buginese',
-        color = '#78350f', // amber-900
+        color = '#78350f', 
         width = 512,
         height = 512,
     } = options;

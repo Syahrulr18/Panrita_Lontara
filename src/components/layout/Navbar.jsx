@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { BookOpen, Box, PenTool, Menu, X } from 'lucide-react';
+import { BookOpen, Box, PenTool, Menu, X, Info } from 'lucide-react';
 
 const Navbar = () => {
   const location = useLocation();
@@ -10,6 +10,7 @@ const Navbar = () => {
     { path: '/', label: 'Materi', icon: <BookOpen size={20} /> },
     { path: '/quiz', label: 'Kuis 3D', icon: <Box size={20} /> },
     { path: '/write', label: 'Menggambar', icon: <PenTool size={20} /> },
+    { path: '/about', label: 'Tentang', icon: <Info size={20} /> },
   ];
 
   const isActive = (path) => location.pathname === path;
