@@ -1,6 +1,5 @@
 import React from 'react';
-import { Heart, Github, Instagram, Mail } from 'lucide-react';
-
+import { Github, Instagram } from 'lucide-react';
 import syahrulImg from '../assets/syahrul.jpg';
 import baqirImg from '../assets/baqir.jpg';
 import salwaImg from '../assets/salwa.jpg';
